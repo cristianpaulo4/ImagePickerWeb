@@ -1,7 +1,7 @@
 name: image_web_picker
 description: Package para abrir imagem no flutter web.
 version: 0.0.1
-homepage:
+homepage: https://github.com/cristianpaulo4/ImagePickerWeb
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
