@@ -1,7 +1,6 @@
 name: image_web_picker
 description: Package para abrir imagem no flutter web.
 version: 0.0.1
-author:
 homepage:
 
 environment:
