@@ -1,15 +1,7 @@
 # image_web_picker
 
-A new Flutter package project.
+![img1](https://user-images.githubusercontent.com/45492072/103492808-4e969e80-4e0c-11eb-89d4-1eb0863ca14e.png)
+
 
 ## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
-"# ImagePickerWeb" 
