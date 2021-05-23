@@ -1,11 +1,13 @@
 import 'dart:convert';
+import 'dart:html';
 import 'dart:typed_data';
+import "package:universal_html/html.dart" as html;
 
-import 'package:universal_html/prefer_universal/html.dart' as html;
+//import 'package:universal_html/prefer_universal/html.dart' as html;
 
 class ImagePickerWeb {
-  Uint8List image_memory;
-  html.File image_upload;
+  Uint8List? image_memory;
+  html.File? image_upload;
 
   Future<ImagePickerWeb> getImage() async {
     _get();
@@ -19,18 +21,20 @@ class ImagePickerWeb {
     return img;
   }
 
-  _get() {
-    final html.InputElement input = html.document.createElement('input');
+  _get() {    
+ 
+    final html.InputElement input = html.document.createElement('input') as InputElement;
+    
     input
       ..type = 'file'
       ..accept = 'image/*';
 
     input.onChange.listen((e) async {
-      if (input.files.isEmpty) return;
+      if (input.files!.isEmpty) return;
 
       final reader = html.FileReader();
-      image_upload = input.files.first;
-      reader.readAsDataUrl(input.files[0]);
+      image_upload = input.files!.first;
+      reader.readAsDataUrl(input.files![0]);
       reader.onError.listen((erro) {
         print(erro);
       });
